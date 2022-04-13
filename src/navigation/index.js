@@ -83,7 +83,7 @@ const MyDrawer = () => {
 
     return (
         <Drawer.Navigator
-            initialRouteName="HomeStack"
+            initialRouteName="Home"
             screenOptions={{
                 drawerActiveBackgroundColor: colorMode == "light" ? colors.primary100 : '#AAA',
                 drawerActiveTintColor: colorMode == "light" ? '#ED8080' : '#FFAAAA',
@@ -200,17 +200,9 @@ function MyTab() {
 function MyHomeStack({ navigation }) {
     return (
         <Stack.Navigator
-            initialRouteName='Homee'
-            screenOptions={{
-
-            }}
+            initialRouteName='Hi'
+            
         >
-            <Stack.Screen name="Home" component={Home}
-                options={{
-                    headerStyle: {
-                        backgroundColor: '#FFAAAA'
-                    },
-                }} />
             <Stack.Screen
                 options={{
                     headerStyle: {
@@ -229,6 +221,13 @@ function MyHomeStack({ navigation }) {
                     )
                 }}
                 name="Welcome" component={chooseTYPE} />
+            <Stack.Screen name="Hi" component={Home}
+                options={{
+                    headerStyle: {
+                        backgroundColor: '#FFAAAA'
+                    },
+                }} />
+            
             <Stack.Screen
                 options={{
                     headerStyle: {

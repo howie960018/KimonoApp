@@ -45,7 +45,7 @@ const KIMONOScreen = ({ navigation }) => {
     <NativeBaseProvider>
 
 
-      <Box>
+      <Box backgroundColor={'#E0FDFF'}>
         <SegmentedControlTab
           values={["男", "女"]}
           tabStyle={{

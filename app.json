@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Kimonoo",
+    "name": "Kimono App",
     "slug": "Kimonoo",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/howie960018/KimonoApp"
   }
 }

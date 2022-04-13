@@ -60,8 +60,8 @@ const DetailScreen = ({ navigation,route }) => {
           <ActionButton />
 
         </Box>
-        <Box style={styles.intro} _dark={{ bg: "#6C6C6C", borderColor: 'blueGray.500', borderWidth: 0.6 }}
-          _light={{ bg: "#E0FDFF" }}>
+        <Box _dark={{ bg: "#6C6C6C", borderColor: 'blueGray.500', borderWidth: 0.6 }}
+          _light={{ bg: "#E0FDFF" }} justifyContent={'center'} alignItems={'center'}>
 
           <Text marginTop={10} marginLeft={25} >
             <Text bold fontSize={16} marginTop={5} >產品說明 </Text>
@@ -83,7 +83,7 @@ const DetailScreen = ({ navigation,route }) => {
 
 
 
-          <Text marginTop={10} marginLeft={25} bold fontSize={28}>Total:{'     '}${' '}{price}x{count}={price*count}</Text>
+          <Text marginTop={10} marginLeft={25} bold fontSize={28}>Total:{'  '}${' '}{price}x{count}={price*count}</Text>
           <Box alignItems={'center'} justifyContent={'center'}>
             <TouchableOpacity style={styles.start} onPress={() => {navigation.navigate('ChooseDate') }} >
               <Text style={styles.buttontxt} _dark={{ color: "blueGray.900", }}
@@ -108,21 +108,14 @@ const styles = StyleSheet.create({
 
   },
   counter: {
-    width: 390,
-    height: 230,
+    
     backgroundColor: "#66B0B5",
     justifyContent: 'center',
     alignItems: 'center'
 
 
   },
-  intro: {
-    width: 390,
-    height: 569,
 
-
-
-  },
   start: {
     fontSize: 16,
     width: 311,
